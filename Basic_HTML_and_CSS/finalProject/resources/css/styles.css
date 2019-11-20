@@ -1,0 +1,159 @@
+.content {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.circlepic {
+    filter: saturate(200%);
+    border-radius: 50%;
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    font-weight: 900;
+}
+
+.table1 {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+table, tr, td, th {
+    border: 1px solid slategrey;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: .5rem;
+}
+
+th {
+    background-color: honeydew;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.img-container {
+    text-align: center;
+    position: relative;
+}
+
+.textontop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 2rem;
+    transform: translate(-50%, -50%);
+}
+
+/* Nav Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: honeydew;
+    z-index: 10;
+}
+
+.navbar nav a {
+    padding: 14px 16px;
+    text-align: center;
+    color: brown;
+    float: left;
+    display: block;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    color: darkred;
+    background: forestgreen;
+}
+
+main {
+    margin-top: 3.25rem;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+    margin: 2rem 0;
+    height: 20rem;
+}
+
+.column p {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+    color: greenyellow;
+    font-size: 1.5rem;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.hoverp {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.hoverp:hover {
+    color: green;
+    font-size: 1.5rem;
+}
+
+/* Working on an image overlay below */
+
+.anothercontainer {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.anothercontainer .anotherimg {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+}
+
+.imageoverlay {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: lightgreen;
+}
+
+.imageoverlay .overlaytext{
+    font-size: 2rem;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.imageoverlay:hover {
+    opacity: 1;
+}
+
+
+
